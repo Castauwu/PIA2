@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,900|Montserrat|Roboto");
+body {
+  
+}
+.imagen{
+ width: 125%;
+    position: absolute;
+    left: -27%;
+    top: 30%;
+}
+.imgsita{
+    top: 29%;
+    width: 44%;
+    position: absolute;
+    left: 29%;
+
+}
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.iconoss{
+  top: 80%;
+  position: absolute;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 60%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom:60%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+.profile {
+  max-height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto ;
+  overflow-y:  auto;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.container {
+  background: #FFFFFF;
+  width: 50%;
+  height: 50%;
+  left: 4%;
+  margin: 0 auto;
+  position: absolute;
+  margin-top: 10%;
+  box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+  border-radius: 10px;
+}
+.container2 {
+  background: #FFFFFF;
+    width: 20%;
+    height: 25%;
+    left: 70%;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 17.125%;
+    box-shadow: 2px 5px 20px rgb(119 119 119 / 50%);
+    border-radius: 45px;
+}
+
+form{
+  width: 100%;
+  top: 120%;
+}
+.logo{
+    
+    width: 10%;
+    position: absolute;
+    
+
+}
+.logo:hover {
+  color: #fff;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.CTA {
+  width: 80px;
+  height: 40px;
+  right: -20px;
+  bottom: 0;
+  margin-bottom: 90px;
+  position: absolute;
+  z-index: 1;
+  background: #7ED386;
+  font-size: 1em;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.CTA h1 {
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-left: 9px;
+}
+.leftbox {
+  float: left;
+  top: -5%;
+  left: -2%;
+  position: absolute;
+  width: 10%;
+  height: 110%;
+  background: rgba(204, 203, 203, 0.94);
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+  box-shadow: 3px 3px 10px rgba(119, 119, 119, 0.5);
+  border-radius: 10px;
+
+}
+.is-vertically-scrollable {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 250%;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  position: absolute;
+  flex-direction: column;
+}
+.plus-button{
+  left:55%;
+  margin-top: 18.125%;
+  position:absolute ;   
+}
+nav a {
+  list-style: none;
+  padding: 40%;
+  color: #000;
+  font-size: 20px;
+  display: block;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+nav a:hover {
+  color: #fff;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+nav a:first-child {
+  margin-top: 7px;
+}
+a:hover {
+  color: #fff;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  transform: scale(2);
+}
+
+.rightbox {
+  float: right;
+  width: 70%;
+  height: 100%;
+}
+
+.profile, .payment, .subscription, .privacy, .settings {
+  transition: opacity 0.5s ease-in;
+  position: absolute;
+  width: 70%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 1em;
+  margin-top: 40px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-weight: bolder;
+  color: #01416f;
+  font-family: "Roboto", sans-serif;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  margin-left: 2px;
+}
+
+p {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #fff, rgba(126, 211, 134, 0.5)) 1 0%;
+  border-top: 0;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding: 7px 0;
+  color: #070707;
+}
+
+span {
+  font-size: 0.5em;
+  color: #777777;
+}
+
+.btn {
+  float: right;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  border: none;
+  color: rgb(0, 0, 0);
+  background-color: #004e858e;
+}
+
+.btn:hover {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+input {
+  border: 1px solid #dddddd;
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  margin: 0;
+}
+
+.privacy h2 {
+  margin-top: 25px;
+}
+
+.settings h2 {
+  margin-top: 25px;
+}
+
+.noshow {
+  opacity: 0;
+}
+
+footer {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  right: -20px;
+  text-align: right;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Roboto", sans-serif;
+}
+footer p {
+  border: none;
+  padding: 0;
+}
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #7d7d7d;
+}
+.form1{
+  text-align: center;
+}
+.enviar{
+
+    width: 60px;
+    height: 30px;
+   
+    bottom: 0;
+    margin-bottom: 90px;
+  
+    z-index: 1;
+    background: #004D85;
+    font-size: 1em;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  
+}
+
+.enviar:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+@media screen and (width: 768px{
+  .container{
+    background-color: black;
+      }
+      .imgsita{
+      	width: 32%;
+      }
+      .img{
+      	width: 32%;
+      }
+}

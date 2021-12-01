@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'><link rel="stylesheet" href="../static/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="logo"><h1 class="logo"></h1></div>
+  <div class="leftbox">
+    <nav>
+      <a id="profile" onclick="location.href='form/templates/perfil.php'"><i class="fa fa-user"></i></a>
+      <a id="privacy" class="active"><i class="fa fa-tasks"></i></a>
+      <a id="payment" onclick="location.href='form/templates/Estamos_enfocados.html'"><i class="fa fa-tasks"></i></a><br><br><br>
+      <a id="subscription" onclick="location.href='equipo_HMV/';"><i class="fa fa-window-close"></i></a>
+    </nav>
+  </div>
+  <div class="rightbox">
+    <div class="profile noshow">
+      <h1>Perfil</h1>
+      <h2>Full Name</h2>
+      <p>Julie Park <button class="btn">update</button></p>
+      <h2>Birthday</h2>
+      <p>July 21</p>
+      <h2>Gender</h2>
+      <p>Female</p>
+      <h2>Email</h2>
+      <p>example@example.com <button class="btn">update</button></p>
+      <h2>Password </h2>
+      <p>••••••• <button class="btn">Change</button></p>
+    </div>
+    <div class="privacy">
+      <h1>Avanzando contigo</h1>
+      <form method="post" class="is-vertically-scrollable" action="color.php" >
+          <p id=p1>¿Se siente satisfecho con el progreso de este año?</p>
+          <input id="1" type="radio" name="p1" value="4" />Muy de acuerdo<br>
+          <input id="1" type="radio" name="p1" value="3" />deacuerdo<br>
+          <input id="1" type="radio" name="p1" value="2" />En desacuerdo<br>
+          <input id="1" type="radio" name="p1" value="1" />En desacuerdo total<br>
+          <p id=p2>¿Ha logrado avances en su desarrollo personal?</p>
+          <input id="2" type="radio" name="p2" value="4" />Muy de acuerdo<br>
+          <input id="2" type="radio" name="p2" value="3" />deacuerdo<br>
+          <input id="2" type="radio" name="p2" value="2" />En desacuerdo<br>
+          <input id="2" type="radio" name="p2" value="1" />En desacuerdo total<br>
+          <p id=p3>¿Está a gusto con la labor que actualmente cumple?</p>
+          <input id="3" type="radio" name="p3" value="4" />Muy de acuerdo<br>
+          <input id="3" type="radio" name="p3" value="3" />deacuerdo<br>
+          <input id="3" type="radio" name="p3" value="2" />En desacuerdo<br>
+          <input id="3" type="radio" name="p3" value="1" />En desacuerdo total<br>
+          <p id=p4>¿Ha desarrollado nuevos hobbies que le favorezcan a su actual labor?</p>
+          <input id="4" type="radio" name="p4" value="4" />Muy de acuerdo<br>
+          <input id="4" type="radio" name="p4" value="3" />deacuerdo<br>
+          <input id="4" type="radio" name="p4" value="2" />En desacuerdo<br>
+          <input id="4" type="radio" name="p4" value="1" />En desacuerdo total<br>
+          <p id=p5>¿Cumplir su labor lo llena de satisfacción?</p>
+          <input id="5" type="radio" name="p5" value="4" />Muy de acuerdo<br>
+          <input id="5" type="radio" name="p5" value="3" />deacuerdo<br>
+          <input id="5" type="radio" name="p5" value="2" />En desacuerdo<br>
+          <input id="5" type="radio" name="p5" value="1" />En desacuerdo total<br>
+          <p id=p6>¿Se siente completado con sus proyectos actuales?</p>
+          <input id="6" type="radio" name="p6" value="4" />Muy de acuerdo<br>
+          <input id="6" type="radio" name="p6" value="3" />deacuerdo<br>
+          <input id="6" type="radio" name="p6" value="2" />En desacuerdo<br>
+          <input id="6" type="radio" name="p6" value="1" />En desacuerdo total<br>
+          <p id=p7>¿Confía en sus capacidades para elaborar exitosamente los proyectos futuros?</p>
+          <input id="7" type="radio" name="p7" value="4" />Muy de acuerdo<br>
+          <input id="7" type="radio" name="p7" value="3" />deacuerdo<br>
+          <input id="7" type="radio" name="p7" value="2" />En desacuerdo<br>
+          <input id="7" type="radio" name="p7" value="1" />En desacuerdo total<br><br>
+          <input type="submit" class="enviar">
+      </form>
+    </div>   
+    <div class="payment noshow">
+      <h1>Estamos Enfocados</h1>
+    </div> 
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{{ url_for('static',filename='script.js')}}"></script>
+
+</body>
+</html>

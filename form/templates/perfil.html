@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'><link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="logo"><h1 class="logo"></h1></div>
+  <div class="leftbox">
+    <nav>
+      <a id="profile" class="active"><i class="fa fa-user"></i></a>
+      <a id="privacy"onclick="location.href='Avanzando_contigo'"><i class="fa fa-tasks"></i></a>
+      <a id="payment" onclick="location.href='Estamos_enfocados'"><i class="fa fa-tasks"></i></a><br><br><br>
+     <a id="subscription" onclick="location.href='../../php/cerrar.php';"><i class="fa fa-window-close"></i></a>
+    </nav>
+  </div>
+  <div class="rightbox">
+    <div class="privacy noshow">
+      <h1>Avanzando contigo</h1>
+    </div>   
+    <div class="payment noshow">
+      <h1>Estamos Enfocados</h1>
+    </div> 
+    <div class="profile">
+      <h1>Perfil</h1>
+      <h2>Nombre</h2>
+      <p>Julie Park</p>
+      <h2>Apellido</h2>
+      <p>July 21</p>
+      <h2>Cargo</h2>
+      <p>Female</p>
+      <h2>Usuario</h2>
+      <p>example@example.com</p>
+      <h2>Contraseña </h2>
+      <p>••••••• <button class="btn">Cambiar</button></p>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="{{ url_for('static',filename='script.js')}}"></script>
+
+</body>
+</html>
